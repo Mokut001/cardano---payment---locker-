@@ -1,17 +1,15 @@
-# cardano---payment---locker-
-# Payment Locker DApp
+# Cardano Payment Locker DApp
 
-## Overview
-A simple escrow DApp on Cardano Preprod that locks ADA into a Plutus script and unlocks it later.
-## Smart Contract (locker.hs)
-* **Purpose**: Lock ADA into a script, unlockable by beneficiary.
-* **Datum**: `LockerDatum { beneficiary :: PubKeyHash }`
-* **Redeemer**: `Unlock`
-* **Logic**: `txSignedBy (beneficiary)`
+A simple DeFi DApp on Cardano Preprod allowing users to lock ADA in a smart contract.  
+Only the owner can withdraw.
 
-## Frontend (main.js)
-* **Lucid integration**: Connects to Cardano wallet and interacts with script.
-* **Functions**:
-  + `connect`: Connects wallet.
-  + `lock`: Locks ADA into script.
-  + `unlock`: Unlocks ADA from script.
+## How to deploy
+
+1. Upload `frontend` folder and `contract/locker.plutus` to GitHub.
+2. Deploy `frontend` folder on Vercel (root = frontend).
+3. Open the live site, connect wallet, deposit ADA, withdraw ADA.
+
+## Requirements
+
+- Preprod wallet (Nami or Eternl)
+- Blockfrost Preprod API key
