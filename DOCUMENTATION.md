@@ -186,9 +186,9 @@ Frontend-to-contract integration
 Real DeFi architecture
 Professional understanding of Cardano DApps
 If you want, I can also generate:
-✅ Developer onboarding guide
-✅ API-based backend (Servant)
-✅ Plutus test suite
-✅ UML smart contract diagram
-✅ Vercel troubleshooting guide
+Developer onboarding guide
+ API-based backend (Servant)
+ Plutus test suite
+UML smart contract diagram
+Vercel troubleshooting guide
 Just tell me what you want added.
